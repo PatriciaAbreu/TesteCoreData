@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Usuario" syncable="YES">
+    <entity name="Repositorio" representedClassName="PRODUCT_MODULE_NAME.Repositorio" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numero" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="repositorios" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
+    <entity name="Usuario" representedClassName="PRODUCT_MODULE_NAME.Usuario" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="repositorios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repositorio" inverseName="usuario" inverseEntity="Repositorio" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Usuario" positionX="-63" positionY="-210" width="128" height="73"/>
+        <element name="Repositorio" positionX="-45" positionY="9" width="128" height="103"/>
     </elements>
 </model>

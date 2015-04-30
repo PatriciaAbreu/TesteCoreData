@@ -14,6 +14,11 @@
 		6A1786761AF19CC100DAA305 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1786751AF19CC100DAA305 /* Images.xcassets */; };
 		6A1786791AF19CC100DAA305 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1786771AF19CC100DAA305 /* LaunchScreen.xib */; };
 		6A1786851AF19CC100DAA305 /* testeCoreDAtaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1786841AF19CC100DAA305 /* testeCoreDAtaTests.swift */; };
+		6A17868F1AF19E1C00DAA305 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17868E1AF19E1C00DAA305 /* Usuario.swift */; };
+		6A1786911AF19E1C00DAA305 /* Repositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1786901AF19E1C00DAA305 /* Repositorio.swift */; };
+		6A1786951AF19FC100DAA305 /* RepositorioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1786941AF19FC100DAA305 /* RepositorioTableViewController.swift */; };
+		6A1786971AF1A04D00DAA305 /* NovoRepositorioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1786961AF1A04D00DAA305 /* NovoRepositorioViewController.swift */; };
+		6A8DF5B51AF2303600FCD380 /* RepositorioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8DF5B41AF2303600FCD380 /* RepositorioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		6A17867E1AF19CC100DAA305 /* testeCoreDAtaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeCoreDAtaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1786831AF19CC100DAA305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A1786841AF19CC100DAA305 /* testeCoreDAtaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeCoreDAtaTests.swift; sourceTree = "<group>"; };
+		6A17868E1AF19E1C00DAA305 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		6A1786901AF19E1C00DAA305 /* Repositorio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositorio.swift; sourceTree = "<group>"; };
+		6A1786941AF19FC100DAA305 /* RepositorioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositorioTableViewController.swift; path = ../RepositorioTableViewController.swift; sourceTree = "<group>"; };
+		6A1786961AF1A04D00DAA305 /* NovoRepositorioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NovoRepositorioViewController.swift; path = ../NovoRepositorioViewController.swift; sourceTree = "<group>"; };
+		6A8DF5B41AF2303600FCD380 /* RepositorioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositorioManager.swift; path = ../RepositorioManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +89,11 @@
 		6A1786681AF19CC100DAA305 /* testeCoreDAta */ = {
 			isa = PBXGroup;
 			children = (
+				6A1786921AF19E8700DAA305 /* Entidades */,
 				6A17866B1AF19CC100DAA305 /* AppDelegate.swift */,
+				6A8DF5B41AF2303600FCD380 /* RepositorioManager.swift */,
+				6A1786941AF19FC100DAA305 /* RepositorioTableViewController.swift */,
+				6A1786961AF1A04D00DAA305 /* NovoRepositorioViewController.swift */,
 				6A1786701AF19CC100DAA305 /* ViewController.swift */,
 				6A1786721AF19CC100DAA305 /* Main.storyboard */,
 				6A1786751AF19CC100DAA305 /* Images.xcassets */,
@@ -113,6 +127,15 @@
 				6A1786831AF19CC100DAA305 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A1786921AF19E8700DAA305 /* Entidades */ = {
+			isa = PBXGroup;
+			children = (
+				6A17868E1AF19E1C00DAA305 /* Usuario.swift */,
+				6A1786901AF19E1C00DAA305 /* Repositorio.swift */,
+			);
+			name = Entidades;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A17868F1AF19E1C00DAA305 /* Usuario.swift in Sources */,
 				6A1786711AF19CC100DAA305 /* ViewController.swift in Sources */,
+				6A1786911AF19E1C00DAA305 /* Repositorio.swift in Sources */,
+				6A1786951AF19FC100DAA305 /* RepositorioTableViewController.swift in Sources */,
+				6A1786971AF1A04D00DAA305 /* NovoRepositorioViewController.swift in Sources */,
+				6A8DF5B51AF2303600FCD380 /* RepositorioManager.swift in Sources */,
 				6A17866F1AF19CC100DAA305 /* testeCoreDAta.xcdatamodeld in Sources */,
 				6A17866C1AF19CC100DAA305 /* AppDelegate.swift in Sources */,
 			);
@@ -413,6 +441,7 @@
 				6A17868A1AF19CC100DAA305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A17868B1AF19CC100DAA305 /* Build configuration list for PBXNativeTarget "testeCoreDAtaTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +450,7 @@
 				6A17868D1AF19CC100DAA305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
